@@ -17,7 +17,7 @@ function App() {
     try {
       const jsonData = JSON.parse(input);
       console.log("Sending data:", { data: jsonData }); // Logging data being sent for debugging
-      const res = await axios.post('http://localhost:5000/bfhl', { data: jsonData });
+      const res = await axios.post('https://0127aryan.github.io/Bajaj-finserv/', { data: jsonData });
       setResponse(res.data);
       setError('');
     } catch (err) {
